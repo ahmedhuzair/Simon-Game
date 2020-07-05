@@ -32,6 +32,16 @@ h2 {
   border-radius: 20%;
 }
 
+.start-btn {
+  margin: 25px;
+  display: inline-block;
+  height: 100px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+  font-size: xx-large;
+}
+
 .game-over {
   background-color: red;
   opacity: 0.8;
