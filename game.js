@@ -56,6 +56,7 @@ $(".start-btn").click(function () {
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
+    $(".start-btn").hide();
   }
 });
 
@@ -84,4 +85,5 @@ function startOver() {
   level=0;
   gamePattern=[];
   started=false;
+  $(".start-btn").show();
 }
