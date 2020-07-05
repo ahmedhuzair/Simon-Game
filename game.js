@@ -51,6 +51,14 @@ $(document).keypress(function () {
   }
 });
 
+$(".start-btn").click(function () {
+  if (started == false) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
 function checkAnswer(currentLevel) {
   if (userClickedPattern[currentLevel] == gamePattern[currentLevel]) {
     console.log("success");
